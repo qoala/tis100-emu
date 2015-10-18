@@ -18,7 +18,7 @@ public class HorizontalBidirectionalWire implements Component {
     private final ReadWritePort rightPort;
 
     public HorizontalBidirectionalWire() {
-        this(OneWayWire::new);
+        this(BasicWire::new);
     }
 
     private HorizontalBidirectionalWire(Supplier<Wire> wireFactory) {

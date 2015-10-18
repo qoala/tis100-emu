@@ -12,13 +12,13 @@ import static org.assertj.core.api.Assertions.catchThrowable;
 import static org.mockito.Mockito.mock;
 import static se.dabneyhov.qoala.tis100.arch.base.Assertions.assertThat;
 
-public class OneWayWireTest {
+public class BasicWireTest {
 
-    OneWayWire subject;
+    BasicWire subject;
 
     @Before
     public void setup() {
-        subject = new OneWayWire();
+        subject = new BasicWire();
     }
 
     @Test

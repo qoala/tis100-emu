@@ -18,7 +18,7 @@ public class VerticalBidirectionalWire implements Component {
     private final ReadWritePort bottomPort;
 
     public VerticalBidirectionalWire() {
-        this(OneWayWire::new);
+        this(BasicWire::new);
     }
 
     private VerticalBidirectionalWire(Supplier<Wire> wireFactory) {

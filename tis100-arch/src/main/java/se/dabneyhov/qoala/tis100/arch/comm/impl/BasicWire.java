@@ -10,9 +10,9 @@ import java.util.Optional;
 import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
- * Implementation of a one-way wire component.
+ * Basic implementation of Wire.
  */
-public class OneWayWire implements Wire, Component {
+public class BasicWire implements Wire, Component {
 
     // External State
     private Optional<Value> value;
@@ -21,7 +21,7 @@ public class OneWayWire implements Wire, Component {
     private Optional<Value> internalValue;
     private Optional<BlockedWireWrite> block;
 
-    public OneWayWire() {
+    public BasicWire() {
         value = Optional.empty();
         internalValue = Optional.empty();
         block = Optional.empty();
