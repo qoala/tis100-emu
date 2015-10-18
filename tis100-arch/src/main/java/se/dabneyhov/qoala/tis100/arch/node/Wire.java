@@ -5,7 +5,7 @@ import java.util.Optional;
 /**
  * Representation of a one-way connection between a pair of inter-node ports.
  */
-public interface Wire {
+public interface Wire extends Component {
 
     /**
      * Read the value if any.
