@@ -1,8 +1,8 @@
-package se.dabneyhov.qoala.tis100.arch.node.impl;
+package se.dabneyhov.qoala.tis100.arch.comm.impl;
 
-import se.dabneyhov.qoala.tis100.arch.node.BlockedWrite;
-import se.dabneyhov.qoala.tis100.arch.node.ReadWritePort;
-import se.dabneyhov.qoala.tis100.arch.node.Value;
+import se.dabneyhov.qoala.tis100.arch.comm.BlockedWrite;
+import se.dabneyhov.qoala.tis100.arch.comm.ReadWritePort;
+import se.dabneyhov.qoala.tis100.arch.base.Value;
 
 import java.util.Optional;
 import java.util.function.Function;

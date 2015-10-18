@@ -1,17 +1,17 @@
-package se.dabneyhov.qoala.tis100.arch.node.impl;
+package se.dabneyhov.qoala.tis100.arch.comm.impl;
 
 import org.junit.Before;
 import org.junit.Test;
-import se.dabneyhov.qoala.tis100.arch.node.BlockedWrite;
-import se.dabneyhov.qoala.tis100.arch.node.ReadPort;
-import se.dabneyhov.qoala.tis100.arch.node.Value;
-import se.dabneyhov.qoala.tis100.arch.node.WritePort;
+import se.dabneyhov.qoala.tis100.arch.comm.BlockedWrite;
+import se.dabneyhov.qoala.tis100.arch.comm.ReadPort;
+import se.dabneyhov.qoala.tis100.arch.base.Value;
+import se.dabneyhov.qoala.tis100.arch.comm.WritePort;
 
 import java.util.Optional;
 
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 import static org.mockito.Mockito.mock;
-import static se.dabneyhov.qoala.tis100.arch.node.Assertions.assertThat;
+import static se.dabneyhov.qoala.tis100.arch.base.Assertions.assertThat;
 
 public class HorizontalBidirectionalWireTest {
 

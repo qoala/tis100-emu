@@ -1,4 +1,4 @@
-package se.dabneyhov.qoala.tis100.arch.node;
+package se.dabneyhov.qoala.tis100.arch.base;
 
 /**
  * Created by eduardo on 10/18/15.

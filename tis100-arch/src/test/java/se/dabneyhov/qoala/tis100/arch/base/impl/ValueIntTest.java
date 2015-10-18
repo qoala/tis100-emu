@@ -1,10 +1,10 @@
-package se.dabneyhov.qoala.tis100.arch.node.impl;
+package se.dabneyhov.qoala.tis100.arch.base.impl;
 
 import org.junit.Test;
-import se.dabneyhov.qoala.tis100.arch.node.Value;
+import se.dabneyhov.qoala.tis100.arch.base.Value;
 
-import static se.dabneyhov.qoala.tis100.arch.node.Assertions.assertThat;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
+import static se.dabneyhov.qoala.tis100.arch.base.Assertions.assertThat;
 
 public class ValueIntTest {
 

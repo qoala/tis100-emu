@@ -1,4 +1,4 @@
-package se.dabneyhov.qoala.tis100.arch.node;
+package se.dabneyhov.qoala.tis100.arch.comm;
 
 /**
  */

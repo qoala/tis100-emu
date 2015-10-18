@@ -1,8 +1,8 @@
-package se.dabneyhov.qoala.tis100.arch.node.impl;
+package se.dabneyhov.qoala.tis100.arch.comm.impl;
 
-import se.dabneyhov.qoala.tis100.arch.node.Component;
-import se.dabneyhov.qoala.tis100.arch.node.ReadWritePort;
-import se.dabneyhov.qoala.tis100.arch.node.Wire;
+import se.dabneyhov.qoala.tis100.arch.base.Component;
+import se.dabneyhov.qoala.tis100.arch.comm.ReadWritePort;
+import se.dabneyhov.qoala.tis100.arch.comm.Wire;
 
 import java.util.function.Supplier;
 

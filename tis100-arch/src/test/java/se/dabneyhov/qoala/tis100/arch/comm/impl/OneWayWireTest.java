@@ -1,16 +1,16 @@
-package se.dabneyhov.qoala.tis100.arch.node.impl;
+package se.dabneyhov.qoala.tis100.arch.comm.impl;
 
 import org.junit.Before;
 import org.junit.Test;
-import se.dabneyhov.qoala.tis100.arch.node.BlockedWrite;
-import se.dabneyhov.qoala.tis100.arch.node.Value;
+import se.dabneyhov.qoala.tis100.arch.comm.BlockedWrite;
+import se.dabneyhov.qoala.tis100.arch.base.Value;
 
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
 import static org.mockito.Mockito.mock;
-import static se.dabneyhov.qoala.tis100.arch.node.Assertions.assertThat;
+import static se.dabneyhov.qoala.tis100.arch.base.Assertions.assertThat;
 
 public class OneWayWireTest {
 

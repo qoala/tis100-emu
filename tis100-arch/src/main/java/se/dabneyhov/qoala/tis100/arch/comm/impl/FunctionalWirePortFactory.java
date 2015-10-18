@@ -1,7 +1,7 @@
-package se.dabneyhov.qoala.tis100.arch.node.impl;
+package se.dabneyhov.qoala.tis100.arch.comm.impl;
 
-import se.dabneyhov.qoala.tis100.arch.node.ReadWritePort;
-import se.dabneyhov.qoala.tis100.arch.node.Wire;
+import se.dabneyhov.qoala.tis100.arch.comm.ReadWritePort;
+import se.dabneyhov.qoala.tis100.arch.comm.Wire;
 
 /**
  * Factory for creating ports from the endpoints of wires.

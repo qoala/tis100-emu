@@ -1,4 +1,4 @@
-package se.dabneyhov.qoala.tis100.arch.node;
+package se.dabneyhov.qoala.tis100.arch.base;
 
 /**
  * Value type passed between TIS-100 nodes.

@@ -1,7 +1,7 @@
-package se.dabneyhov.qoala.tis100.arch.node.impl;
+package se.dabneyhov.qoala.tis100.arch.base.impl;
 
 import com.google.common.base.MoreObjects;
-import se.dabneyhov.qoala.tis100.arch.node.Value;
+import se.dabneyhov.qoala.tis100.arch.base.Value;
 
 import java.util.Objects;
 

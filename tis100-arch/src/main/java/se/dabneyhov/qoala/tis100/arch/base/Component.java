@@ -1,4 +1,4 @@
-package se.dabneyhov.qoala.tis100.arch.node;
+package se.dabneyhov.qoala.tis100.arch.base;
 
 /**
  * Component of a TIS-100 system.

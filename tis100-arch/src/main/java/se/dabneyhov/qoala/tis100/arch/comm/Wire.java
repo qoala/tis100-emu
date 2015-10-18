@@ -1,4 +1,7 @@
-package se.dabneyhov.qoala.tis100.arch.node;
+package se.dabneyhov.qoala.tis100.arch.comm;
+
+import se.dabneyhov.qoala.tis100.arch.base.Component;
+import se.dabneyhov.qoala.tis100.arch.base.Value;
 
 import java.util.Optional;
 

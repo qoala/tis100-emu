@@ -40,7 +40,8 @@
                 <artifactId>assertj-assertions-generator-maven-plugin</artifactId>
                 <configuration>
                     <packages>
-                        <package>se.dabneyhov.qoala.tis100.arch.node</package>
+                        <package>se.dabneyhov.qoala.tis100.arch.base</package>
+                        <package>se.dabneyhov.qoala.tis100.arch.comm</package>
                     </packages>
                     <classes>
                     </classes>
