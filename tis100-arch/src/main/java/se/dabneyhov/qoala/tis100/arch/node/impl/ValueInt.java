@@ -1,6 +1,9 @@
 package se.dabneyhov.qoala.tis100.arch.node.impl;
 
+import com.google.common.base.MoreObjects;
 import se.dabneyhov.qoala.tis100.arch.node.Value;
+
+import java.util.Objects;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
@@ -26,7 +29,31 @@ public class ValueInt implements Value {
         return value;
     }
 
-    protected static int clamp(int value) {
+    private static int clamp(int value) {
         return (value > 999) ? 999 : (value < -999) ? -999 : value;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        ValueInt valueInt = (ValueInt) o;
+        return Objects.equals(value, valueInt.value);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(value);
+    }
+
+    @Override
+    public String toString() {
+        return MoreObjects.toStringHelper(this)
+                          .add("value", value)
+                          .toString();
     }
 }

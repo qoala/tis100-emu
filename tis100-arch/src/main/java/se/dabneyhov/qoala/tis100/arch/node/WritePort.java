@@ -9,7 +9,7 @@ public interface WritePort {
      *
      * All writes block for at least one cycle.
      *
-     * @param value The value to write to the port.
+     * @param value The value to write
      * @return a BlockedWrite to check for when the write has completed
      */
     BlockedWrite write(Value value);

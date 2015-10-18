@@ -15,15 +15,17 @@
 
     <properties>
         <!-- Runtime Dependency Versions-->
-        <guava.version>r03</guava.version>
+        <guava.version>18.0</guava.version>
 
         <!-- Test Dependency Versions-->
         <assertj.version>3.2.0</assertj.version>
         <assertj-guava.version>2.0.0</assertj-guava.version>
         <junit.version>4.12</junit.version>
+        <mockito.version>2.0.31-beta</mockito.version>
 
         <!-- Plugin Versions -->
-        <assertj-generator.version>2.0.0</assertj-generator.version>
+        <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
+        <assertj-generator-plugin.version>2.0.0</assertj-generator-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -31,17 +33,7 @@
             <!-- External Runtime Dependencies -->
             <dependency>
                 <groupId>com.google.guava</groupId>
-                <artifactId>guava-base</artifactId>
-                <version>${guava.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava-collections</artifactId>
-                <version>${guava.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava-io</artifactId>
+                <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
             </dependency>
 
@@ -64,6 +56,12 @@
                 <version>${assertj-guava.version}</version>
                 <scope>test</scope>
             </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito.version}</version>
+                <scope>test</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -71,9 +69,18 @@
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven-compiler-plugin.version}</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
+                <plugin>
                     <groupId>org.assertj</groupId>
                     <artifactId>assertj-assertions-generator-maven-plugin</artifactId>
-                    <version>${assertj-generator.version}</version>
+                    <version>${assertj-generator-plugin.version}</version>
                     <configuration>
                         <generateBddAssertions>false</generateBddAssertions>
                     </configuration>
