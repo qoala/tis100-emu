@@ -14,9 +14,34 @@
     </parent>
 
     <dependencies>
-        <!--<dependency>-->
-            <!--<groupId>com.google.guava</groupId>-->
-            <!--<artifactId>guava-base</artifactId>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava-base</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+        </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-assertions-generator-maven-plugin</artifactId>
+                <configuration>
+                    <packages>
+                        <package>se.dabneyhov.qoala.tis100.arch.node</package>
+                    </packages>
+                    <classes>
+                    </classes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
